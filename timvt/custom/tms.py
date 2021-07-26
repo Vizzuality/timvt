@@ -19,3 +19,11 @@ EPSG6933 = morecantile.TileMatrixSet.custom(
     identifier="EPSG6933",
     matrix_scale=[1, 1],
 )
+
+# CUSTOM TMS for EPSG:3031
+EPSG3031 = morecantile.TileMatrixSet.custom(
+    (-948.75, -543592.47, 5817.41, -3333128.95),
+    CRS.from_epsg(3031),
+    identifier="EPSG3031",
+    matrix_scale=[1, 1],
+)
